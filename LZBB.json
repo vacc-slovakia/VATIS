@@ -1,6 +1,6 @@
 {
   "name": "Slovakia",
-  "id": "939b12e1-1ec7-404a-97d8-c511f216a901",
+  "id": "146f0b31-a595-471b-bc4a-b2f256de0156",
   "updateUrl": "https://raw.githubusercontent.com/vacc-slovakia/VATIS/refs/heads/main/LZBB.json",
   "updateSerial": 2026110404,
   "stations": [
@@ -1892,7 +1892,7 @@
           }
         },
         "clouds": {
-          "identifyCeilingLayer": true,
+          "identifyCeilingLayer": false,
           "identifyCeilingLayerTextAtis": false,
           "textAtisCeilingPrefix": "CIG",
           "cloudCeilingLayerTypes": [
@@ -2250,7 +2250,7 @@
           "name": "DEP04 ARR31",
           "airportConditions": "",
           "notams": "",
-          "template": "STARTING.\r\n[OBS_TIME].\r\nRWY 04.\r\nARR RWY 31.\r\n[TL].\r\n[NOTAMS].\r\n[FULL_WX_STRING].\r\n[CLOSING]\r\n",
+          "template": "",
           "externalGenerator": {
             "enabled": false,
             "textUrl": "",
@@ -2321,13 +2321,43 @@
         },
         {
           "variableName": "STARTING",
-          "text": "LZIB DEP INF [ATIS_CODE]",
+          "text": "LZIB DEP [ATIS_CODE]",
           "voice": "THIS IS STEFANIK DEPARTURE INFORMATION [ATIS_CODE]"
         },
         {
           "variableName": "CDM",
           "text": "CDM ACTIVE, CONFIRM TOBT AT VATS.IM/VDGS AND MONITOR YOUR STATUS",
-          "voice": "COLLABORATIVE DECISION MAKING IN PROGRESS, CONFIRM TARGET OFF BLOCK TIME AT V A TS. DOT. I M. SLASH VDGS  AND MONITOR YOUR STATUS"
+          "voice": "COLLABORATIVE DECISION MAKING IN PROGRESS, CONFIRM TARGET OFF BLOCK TIME AT VATS dot I-M SLASH Vee-Dee-Gee-Ess  AND MONITOR YOUR STATUS"
+        },
+        {
+          "variableName": "ILS_INOP",
+          "text": "ILS INOP",
+          "voice": "ILS INOPERATIV"
+        },
+        {
+          "variableName": "VOR_INOP",
+          "text": "VOR INOP",
+          "voice": "VOR INOPERATIV"
+        },
+        {
+          "variableName": "NDB_INOP",
+          "text": "NDB INOP",
+          "voice": "NDB INOPERATIV"
+        },
+        {
+          "variableName": "GP_INOP",
+          "text": "GLIDEPATH INOP",
+          "voice": "GLIDEPATH INOPERATIV"
+        },
+        {
+          "variableName": "LOC_INOP",
+          "text": "LOC INOP",
+          "voice": "LOCALIZER INOPERATIV"
+        },
+        {
+          "variableName": "GPLOC_INOP",
+          "text": "GP & LOC INOP",
+          "voice": "GLIDEPATH AND LOCALIZER INOPERATIV"
         }
       ],
       "patterns": [
@@ -2367,8 +2397,13 @@
       ],
       "notamDefinitions": [
         {
-          "text": "@LVP",
+          "text": "@CDM",
           "ordinal": 1,
+          "enabled": true
+        },
+        {
+          "text": "@LVP",
+          "ordinal": 2,
           "weatherCondition": "rvr < 600m OR ceiling < 200m",
           "enabled": true
         }
@@ -4267,7 +4302,7 @@
           }
         },
         "clouds": {
-          "identifyCeilingLayer": true,
+          "identifyCeilingLayer": false,
           "identifyCeilingLayerTextAtis": false,
           "textAtisCeilingPrefix": "CIG",
           "cloudCeilingLayerTypes": [
@@ -4662,8 +4697,33 @@
         },
         {
           "variableName": "STARTING",
-          "text": "LZIB ARR INF [ATIS_CODE]",
+          "text": "LZIB ARR [ATIS_CODE]",
           "voice": "THIS IS STEFANIK ARRIVAL INFORMATION [ATIS_CODE].."
+        },
+        {
+          "variableName": "VOR_INOP",
+          "text": "VOR INOP",
+          "voice": "VOR INOPERATIV"
+        },
+        {
+          "variableName": "NDB_INOP",
+          "text": "NDB INOP",
+          "voice": "NDB INOPERATIV"
+        },
+        {
+          "variableName": "GP_INOP",
+          "text": "GLIDESLOPE INOP",
+          "voice": "GLIDESLOPE INOPERATIV"
+        },
+        {
+          "variableName": "LOC_INOP",
+          "text": "LOCALIZER INOP",
+          "voice": "LOCALIZER INOPERATIV"
+        },
+        {
+          "variableName": "GP_LOC_INOP",
+          "text": "GLIDESLOPE & LOCALIZER INOP",
+          "voice": "GLIDESLOPE AND LOCALIZER INOPERATIV"
         }
       ],
       "patterns": [
@@ -4696,8 +4756,28 @@
       "airportConditionDefinitions": [],
       "notamDefinitions": [
         {
-          "text": "@LVP",
+          "text": "@GP_LOC_INOP",
           "ordinal": 1,
+          "enabled": false
+        },
+        {
+          "text": "@GP_INOP",
+          "ordinal": 2,
+          "enabled": false
+        },
+        {
+          "text": "@NDB_INOP",
+          "ordinal": 3,
+          "enabled": false
+        },
+        {
+          "text": "",
+          "ordinal": 4,
+          "enabled": false
+        },
+        {
+          "text": "@LVP",
+          "ordinal": 5,
           "weatherCondition": "rvr < 600m OR ceiling < 200m",
           "enabled": true
         }
@@ -6596,7 +6676,7 @@
           }
         },
         "clouds": {
-          "identifyCeilingLayer": true,
+          "identifyCeilingLayer": false,
           "identifyCeilingLayerTextAtis": false,
           "textAtisCeilingPrefix": "CIG",
           "cloudCeilingLayerTypes": [
@@ -6989,13 +7069,38 @@
         },
         {
           "variableName": "STARTING",
-          "text": "LZKZ INF [ATIS_CODE]",
+          "text": "LZKZ [ATIS_CODE]",
           "voice": "THIS IS POPRAD-TATRY DEPARTURE INFORMATION [ATIS_CODE]"
         },
         {
           "variableName": "CDM",
           "text": "CDM ACTIVE, CONFIRM TOBT AT VATS.IM/VDGS AND MONITOR YOUR STATUS",
-          "voice": "COLLABORATIVE DECISION MAKING IN PROGRESS, CONFIRM TARGET OFF BLOCK TIME AT V A TS. DOT. I M. SLASH VDGS  AND MONITOR YOUR STATUS"
+          "voice": "COLLABORATIVE DECISION MAKING IN PROGRESS, CONFIRM TARGET OFF BLOCK TIME AT VATS dot I-M SLASH Vee-Dee-Gee-Ess  AND MONITOR YOUR STATUS"
+        },
+        {
+          "variableName": "VOR_INOP",
+          "text": "VOR INOP",
+          "voice": "VOR INOPERATIV"
+        },
+        {
+          "variableName": "NDB_INOP",
+          "text": "NDB INOP",
+          "voice": "NDB INOPERATIV"
+        },
+        {
+          "variableName": "GP_INOP",
+          "text": "GLIDESLOPE INOP",
+          "voice": "GLIDESLOPE INOPERATIV"
+        },
+        {
+          "variableName": "LOC_INOP",
+          "text": "LOCALIZER INOP",
+          "voice": "LOCALIZER INOPERATIV"
+        },
+        {
+          "variableName": "GP_LOC_INOP",
+          "text": "GLIDESLOPE & LOCALIZER INOP",
+          "voice": "GLIDESLOPE AND LOCALIZER INOPERATIV"
         }
       ],
       "patterns": [
@@ -7026,7 +7131,13 @@
         }
       ],
       "airportConditionDefinitions": [],
-      "notamDefinitions": [],
+      "notamDefinitions": [
+        {
+          "text": "@CDM",
+          "ordinal": 1,
+          "enabled": true
+        }
+      ],
       "datisTextReplacements": [],
       "datisPrependAirportConditions": "",
       "datisAppendAirportConditions": "",
@@ -8921,7 +9032,7 @@
           }
         },
         "clouds": {
-          "identifyCeilingLayer": true,
+          "identifyCeilingLayer": false,
           "identifyCeilingLayerTextAtis": false,
           "textAtisCeilingPrefix": "CIG",
           "cloudCeilingLayerTypes": [
@@ -9293,7 +9404,7 @@
           "id": "d6454cb8-112a-45c6-b941-e0fbf9b5642b",
           "ordinal": 1,
           "name": "DEP19 ARR19",
-          "airportConditions": "RNP APPR, RWY IN USE 19, EXPECT N ARRIVALS",
+          "airportConditions": "RNP",
           "template": "STARTING.\r\n[OBS_TIME].\r\nRWY 19 FOR DEP AND ARR.\r\nEXPECT [ARPT_COND] APP.\r\n[TL].\r\n[NOTAMS].\r\n[FULL_WX_STRING]. \r\n[CLOSING]\r\n",
           "externalGenerator": {
             "enabled": false,
@@ -9314,13 +9425,38 @@
         },
         {
           "variableName": "STARTING",
-          "text": "LZKZ INF [ATIS_CODE]",
-          "voice": "THIS IS KOSITSCHE DEPARTURE INFORMATION [ATIS_CODE]"
+          "text": "LZKZ [ATIS_CODE]",
+          "voice": "THIS IS KO-shee-tseh DEPARTURE INFORMATION [ATIS_CODE]"
         },
         {
           "variableName": "CDM",
           "text": "CDM ACTIVE, CONFIRM TOBT AT VATS.IM/VDGS AND MONITOR YOUR STATUS",
-          "voice": "COLLABORATIVE DECISION MAKING IN PROGRESS, CONFIRM TARGET OFF BLOCK TIME AT V A TS. DOT. I M. SLASH VDGS  AND MONITOR YOUR STATUS"
+          "voice": "COLLABORATIVE DECISION MAKING IN PROGRESS, CONFIRM TARGET OFF BLOCK TIME AT VATS dot I-M SLASH Vee-Dee-Gee-Ess  AND MONITOR YOUR STATUS"
+        },
+        {
+          "variableName": "VOR_INOP",
+          "text": "VOR INOP",
+          "voice": "VOR INOPERATIV"
+        },
+        {
+          "variableName": "NDB_INOP",
+          "text": "NDB INOP",
+          "voice": "NDB INOPERATIV"
+        },
+        {
+          "variableName": "GP_INOP",
+          "text": "GLIDESLOPE INOP",
+          "voice": "GLIDESLOPE INOPERATIV"
+        },
+        {
+          "variableName": "LOC_INOP",
+          "text": "LOCALIZER INOP",
+          "voice": "LOCALIZER INOPERATIV"
+        },
+        {
+          "variableName": "GP_LOC_INOP",
+          "text": "GLIDESLOPE & LOCALIZER INOP",
+          "voice": "GLIDESLOPE AND LOCALIZER INOPERATIV"
         }
       ],
       "patterns": [
@@ -9351,7 +9487,43 @@
         }
       ],
       "airportConditionDefinitions": [],
-      "notamDefinitions": [],
+      "notamDefinitions": [
+        {
+          "text": "LOC_INOP",
+          "ordinal": 1,
+          "enabled": false
+        },
+        {
+          "text": "GP_INOP",
+          "ordinal": 2,
+          "enabled": false
+        },
+        {
+          "text": "GP_LOC_INOP",
+          "ordinal": 3,
+          "enabled": false
+        },
+        {
+          "text": "VOR_INOP",
+          "ordinal": 4,
+          "enabled": false
+        },
+        {
+          "text": "NDB_INOP",
+          "ordinal": 5,
+          "enabled": false
+        },
+        {
+          "text": "",
+          "ordinal": 5,
+          "enabled": false
+        },
+        {
+          "text": "CDM",
+          "ordinal": 7,
+          "enabled": true
+        }
+      ],
       "datisTextReplacements": [],
       "datisPrependAirportConditions": "",
       "datisAppendAirportConditions": "",
