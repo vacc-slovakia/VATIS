@@ -2,7 +2,7 @@
   "name": "Slovakia",
   "id": "146f0b31-a595-471b-bc4a-b2f256de0156",
   "updateUrl": "https://raw.githubusercontent.com/vacc-slovakia/VATIS/refs/heads/main/LZBB.json",
-  "updateSerial": 2026110404,
+  "updateSerial": 2026110405,
   "stations": [
     {
       "id": "cf614c12-d55f-4818-9c51-eda7064ccc4b",
