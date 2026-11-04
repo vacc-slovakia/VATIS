@@ -2250,7 +2250,7 @@
           "name": "DEP04 ARR31",
           "airportConditions": "",
           "notams": "",
-          "template": "",
+          "template": "STARTING.\r\n[OBS_TIME].\r\nRWY 04.\r\nARR RWY 31.\r\n[TL].\r\n[NOTAMS].\r\n[FULL_WX_STRING]. \r\n[CLOSING]\r\n",
           "externalGenerator": {
             "enabled": false,
             "textUrl": "",
