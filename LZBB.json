@@ -7069,7 +7069,7 @@
         },
         {
           "variableName": "STARTING",
-          "text": "LZKZ [ATIS_CODE]",
+          "text": "LZTT [ATIS_CODE]",
           "voice": "THIS IS POPRAD-TATRY DEPARTURE INFORMATION [ATIS_CODE]"
         },
         {
@@ -9406,6 +9406,22 @@
           "name": "DEP19 ARR19",
           "airportConditions": "RNP",
           "template": "STARTING.\r\n[OBS_TIME].\r\nRWY 19 FOR DEP AND ARR.\r\nEXPECT [ARPT_COND] APP.\r\n[TL].\r\n[NOTAMS].\r\n[FULL_WX_STRING]. \r\n[CLOSING]\r\n",
+          "externalGenerator": {
+            "enabled": false,
+            "textUrl": "",
+            "voiceUrl": "",
+            "arrival": "",
+            "departure": "",
+            "approaches": "",
+            "remarks": ""
+          }
+        },
+        {
+          "id": "d6454cb8-112a-45c6-b941-e0fbf9b5642b",
+          "ordinal": 1,
+          "name": "DEP01 ARR19",
+          "airportConditions": "RNP",
+          "template": "STARTING.\r\n[OBS_TIME].\r\nRWY 01 FOR DEP, RWY 19 FOR ARR.\r\nEXPECT [ARPT_COND] APP.\r\n[TL].\r\n[NOTAMS].\r\n[FULL_WX_STRING]. \r\n[CLOSING]\r\n",
           "externalGenerator": {
             "enabled": false,
             "textUrl": "",
