@@ -9386,7 +9386,7 @@
       "presets": [
         {
           "id": "8184aec2-a53b-4d5b-8380-915e8bda6a49",
-          "ordinal": 0,
+          "ordinal": 1,
           "name": "DEP01 ARR01",
           "airportConditions": "ILS Z",
           "template": "STARTING.\r\n[OBS_TIME].\r\nRWY 01 FOR DEP AND ARR.\r\nEXPECT [ARPT_COND] APP.\r\n[TL].\r\n[NOTAMS].\r\n[FULL_WX_STRING]. \r\n[CLOSING]\r\n",
@@ -9403,6 +9403,22 @@
         {
           "id": "d6454cb8-112a-45c6-b941-e0fbf9b5642b",
           "ordinal": 1,
+          "name": "DEP01 ARR19",
+          "airportConditions": "RNP",
+          "template": "STARTING.\r\n[OBS_TIME].\r\nRWY 01 FOR DEP, RWY 19 FOR ARR.\r\nEXPECT [ARPT_COND] APP.\r\n[TL].\r\n[NOTAMS].\r\n[FULL_WX_STRING]. \r\n[CLOSING]\r\n",
+          "externalGenerator": {
+            "enabled": false,
+            "textUrl": "",
+            "voiceUrl": "",
+            "arrival": "",
+            "departure": "",
+            "approaches": "",
+            "remarks": ""
+          }
+        },
+        {
+          "id": "d6454cb8-112a-45c6-b941-e0fbf9b5642b",
+          "ordinal": 3,
           "name": "DEP19 ARR19",
           "airportConditions": "RNP",
           "template": "STARTING.\r\n[OBS_TIME].\r\nRWY 19 FOR DEP AND ARR.\r\nEXPECT [ARPT_COND] APP.\r\n[TL].\r\n[NOTAMS].\r\n[FULL_WX_STRING]. \r\n[CLOSING]\r\n",
@@ -9417,10 +9433,10 @@
           }
         },
         {
-          "id": "d6454cb8-112a-45c6-b941-e0fbf9b5642b",
-          "ordinal": 1,
-          "name": "DEP01 ARR19",
-          "airportConditions": "RNP",
+          "id": "ae216b18-f367-46ff-9507-0f49120a93c2",
+          "ordinal": 4,
+          "name": "DEP19 ARR01",
+          "airportConditions": "ILS Z",
           "template": "STARTING.\r\n[OBS_TIME].\r\nRWY 01 FOR DEP, RWY 19 FOR ARR.\r\nEXPECT [ARPT_COND] APP.\r\n[TL].\r\n[NOTAMS].\r\n[FULL_WX_STRING]. \r\n[CLOSING]\r\n",
           "externalGenerator": {
             "enabled": false,
