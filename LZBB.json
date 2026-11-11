@@ -2,7 +2,7 @@
   "name": "LZBB",
   "id": "146f0b31-a595-471b-bc4a-b2f256de0156",
   "updateUrl": "https://raw.githubusercontent.com/vacc-slovakia/VATIS/refs/heads/main/LZBB.json",
-  "updateSerial": 2026110704,
+  "updateSerial": 2026110702,
   "stations": [
     {
       "id": "cf614c12-d55f-4818-9c51-eda7064ccc4b",
@@ -7078,21 +7078,6 @@
           }
         },
         {
-          "id": "d293827b-cc95-4d53-8c9c-aad55ab64eb4",
-          "ordinal": 3,
-          "name": "DEP09 ARR27",
-          "airportConditions": "ILS",
-          "template": "STARTING.\r\n[OBS_TIME].\r\nRWY 09 FOR DEP, RWY 27 FOR ARR.\r\nEXPECT [ARPT_COND] APP.\r\n[TL].\r\n[NOTAMS].\r\n[FULL_WX_STRING]. \r\n[CLOSING]\r\n",
-          "externalGenerator": {
-            "enabled": false,
-            "textUrl": "",
-            "voiceUrl": "",
-            "arrival": "",
-            "departure": "",
-            "approaches": "",
-            "remarks": ""
-          },
-        {
           "id": "b9be01a9-ad95-45b7-b65a-f741430c9308",
           "ordinal": 1,
           "name": "DEP27 ARR27",
@@ -7123,7 +7108,22 @@
             "approaches": "",
             "remarks": ""
           }
-        }
+        },
+        {
+          "id": "d293827b-cc95-4d53-8c9c-aad55ab64eb4",
+          "ordinal": 3,
+          "name": "DEP09 ARR27",
+          "airportConditions": "ILS",
+          "template": "STARTING.\r\n[OBS_TIME].\r\nRWY 09 FOR DEP, RWY 27 FOR ARR.\r\nEXPECT [ARPT_COND] APP.\r\n[TL].\r\n[NOTAMS].\r\n[FULL_WX_STRING]. \r\n[CLOSING]\r\n",
+          "externalGenerator": {
+            "enabled": false,
+            "textUrl": "",
+            "voiceUrl": "",
+            "arrival": "",
+            "departure": "",
+            "approaches": "",
+            "remarks": ""
+          }
         }
       ],
       "contractions": [
