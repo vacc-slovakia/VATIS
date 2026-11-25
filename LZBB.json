@@ -2398,14 +2398,7 @@
           "voice": "DEPARTURE"
         }
       ],
-      "airportConditionDefinitions": [
-        {
-          "text": "@LVP",
-          "ordinal": 1,
-          "weatherCondition": "rvr < 600m OR ceiling < 200m",
-          "enabled": true
-        }
-      ],
+      "airportConditionDefinitions": [],
       "notamDefinitions": [
         {
           "text": "@CDM",
@@ -2415,7 +2408,7 @@
         {
           "text": "@LVP",
           "ordinal": 2,
-          "weatherCondition": "rvr < 600m OR ceiling < 200m",
+          "weatherCondition": "rvr < 600m OR ceiling < 200ft",
           "enabled": true
         }
       ],
@@ -4800,7 +4793,7 @@
         {
           "text": "@LVP",
           "ordinal": 5,
-          "weatherCondition": "rvr < 600m OR ceiling < 200m",
+          "weatherCondition": "rvr < 600m OR ceiling < 200ft",
           "enabled": true
         }
       ],
